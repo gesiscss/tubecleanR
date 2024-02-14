@@ -26,10 +26,10 @@ This function requires the 'tuber' or 'vosonSML' package for data collection. Th
 }
 \examples{
 # Loading example comments bundled with the package
-LastWeekTonight_comments <- readRDS(system.file("RawLWTComments.rds", package = "tubecleanR"))
+tuber_comments <- readRDS(system.file("tuberComments.rds", package = "tubecleanR"))
 
 # parsing comments
-parsed_comments <- parse_yt_comments(LastWeekTonight_comments)
+parsed_comments <- parse_yt_comments(tuber_comments)
 }
 \keyword{comments,}
 \keyword{parsing}

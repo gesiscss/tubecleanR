@@ -4,16 +4,17 @@
 #' @param package A character string specifying the package that was used to collect the comment data. The default value is "auto", which automatically detects the package based on the structure of the `data`. Other possible values are "tuber" and "vosonSML".
 #' @param verbose A logical parameter. If TRUE, the function prints progress reports to the console.
 #' @return A dataframe with the original comment data and additional columns for cleaned comments, emojis, emoji descriptions, smileys, URLs, timestamps, and user mentions. The dataframe also includes metadata as attributes, such as the origin package, tubecleanR version, and counts of comments, links, emojis, smileys, user mentions, and timestamps.
-#' @importFrom stringi stri_split_boundaries stri_extract_all_regex
+#' @importFrom stringi stri_split_boundaries stri_extract_all_regex stri_replace_all_regex
 #' @importFrom anytime anytime
 #' @importFrom qdapRegex rm_url rm_non_words
 #' @importFrom utils packageVersion
+#' @importFrom utils read.csv
 #' @examples
 #' # Loading example comments bundled with the package
-#' LastWeekTonight_comments <- readRDS(system.file("RawLWTComments.rds", package = "tubecleanR"))
+#' tuber_comments <- readRDS(system.file("tuberComments.rds", package = "tubecleanR"))
 #'
 #' # parsing comments
-#' parsed_comments <- parse_yt_comments(LastWeekTonight_comments)
+#' parsed_comments <- parse_yt_comments(tuber_comments)
 #' @export
 #' @keywords youtube, comments, parsing
 #' @note This function requires the 'tuber' or 'vosonSML' package for data collection. The 'tubecleanR' minipackage is only for processing.
