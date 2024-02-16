@@ -1,9 +1,9 @@
 #' Parse YouTube Comments
-#' This function processes a dataframe of YouTube comments, extracting and cleaning various elements such as emojis, smileys, URLs, timestamps, and user mentions. It supports comment dataframes created with the \code{\link[tuber]{get_all_comments}},\code{\link[tuber]{get_comments}} or \code{\link[vosonSML]{Collect}} functions.
+#' This function processes a dataframe of YouTube comments, extracting and cleaning various elements such as emojis, Emoticons, URLs, timestamps, and user mentions. It supports comment dataframes created with the \code{\link[tuber]{get_all_comments}},\code{\link[tuber]{get_comments}} or \code{\link[vosonSML]{Collect}} functions.
 #' @param data A dataframe containing YouTube comments. The structure of this dataframe should conform to the output of the 'tuber' or 'vosonSML' package.
 #' @param package A character string specifying the package that was used to collect the comment data. The default value is "auto", which automatically detects the package based on the structure of the `data`. Other possible values are "tuber" and "vosonSML".
 #' @param verbose A logical parameter. If TRUE, the function prints progress reports to the console.
-#' @return A dataframe with the original comment data and additional columns for cleaned comments, emojis, emoji descriptions, smileys, URLs, timestamps, and user mentions. The dataframe also includes metadata as attributes, such as the origin package, tubecleanR version, and counts of comments, links, emojis, smileys, user mentions, and timestamps.
+#' @return A dataframe with the original comment data and additional columns for cleaned comments, emojis, emoji descriptions, emoticons, URLs, timestamps, and user mentions. The dataframe also includes metadata as attributes, such as the origin package, tubecleanR version, and counts of comments, links, emojis, Emoticons, user mentions, and timestamps.
 #' @importFrom stringi stri_split_boundaries stri_extract_all_regex stri_replace_all_regex
 #' @importFrom anytime anytime
 #' @importFrom qdapRegex rm_url rm_non_words
@@ -49,8 +49,8 @@ parse_yt_comments <- function(data,
   if (verbose) {cat("Imported Emoji Dictionary \U2713 \n")}
 
 
-  #### Importing Smiley Dictionary
-  SmileyDictionary <- read.csv(system.file("SmileyDictionary.csv", package = "tubecleanR"),
+  #### Importing Emoticon Dictionary
+  EmoticonDictionary <- read.csv(system.file("EmoticonDictionary.csv", package = "tubecleanR"),
                               header = TRUE,
                               stringsAsFactors = FALSE,
                               strip.white = FALSE,
@@ -59,10 +59,10 @@ parse_yt_comments <- function(data,
   )
 
   # printing progress report
-  if (verbose) {cat("Imported Smiley Dictionary \U2713 \n")}
+  if (verbose) {cat("Imported Emoticon Dictionary \U2713 \n")}
 
-  # trimming down smilies for better regex
-  SmileyVec <- trimws(SmileyDictionary[,2])
+  # trimming down Emoticons for better regex
+  EmoticonVec <- trimws(EmoticonDictionary[,2])
 
   #### Naming columns
 
@@ -158,15 +158,15 @@ parse_yt_comments <- function(data,
   # printing progress report
   if (verbose) {cat("Extracted Links from comments \U2713 \n")}
 
-  #### ASCII smileys
+  #### ASCII Emoticons
 
-  # Extracting Smiley column
-  Smilies <- sapply(strsplit(data$textOriginal, " "), function(x) x[x %in% SmileyVec])
-  Smilies[lapply(Smilies, length) == 0] <- NA
-  Smilies <- I(Smilies)
+  # Extracting Emoticon column
+  Emoticons <- sapply(strsplit(data$textOriginal, " "), function(x) x[x %in% EmoticonVec])
+  Emoticons[lapply(Emoticons, length) == 0] <- NA
+  Emoticons <- I(Emoticons)
 
   # printing progress report
-  if (verbose) {cat("Extracted Smilies from comments \U2713 \n")}
+  if (verbose) {cat("Extracted Emoticons from comments \U2713 \n")}
 
   #### Timestamp mentions
   TimeStamps <- stri_extract_all_regex(data$textOriginal, pattern = "(^|\\s|@)\\d{1,3}:\\d{2}")
@@ -215,7 +215,7 @@ parse_yt_comments <- function(data,
                          comments_cleaned,
                          I(Emoji),
                          I(EmojiDescriptions),
-                         I(Smilies),
+                         I(Emoticons),
                          as.numeric(data$likeCount),
                          I(Links),
                          I(TimeStamps),
@@ -233,7 +233,7 @@ parse_yt_comments <- function(data,
                  "CleanedText",
                  "Emoji",
                  "EmojiDescription",
-                 "Smilies",
+                 "Emoticons",
                  "LikeCount",
                  "URL",
                  "Timestamps",
@@ -252,7 +252,7 @@ parse_yt_comments <- function(data,
                         comments = dim(df)[1],
                         links = sum(!is.na(df$URL)),
                         emoji = sum(!is.na(df$Emoji)),
-                        smilies = sum(!is.na(df$Smilies)),
+                        Emoticons = sum(!is.na(df$Emoticons)),
                         usermentions = sum(!is.na(df$UserMentions)),
                         timestamps = sum(!is.na(df$Timestamps))
                       ))

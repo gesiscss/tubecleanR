@@ -3,7 +3,7 @@
 \name{parse_yt_comments}
 \alias{parse_yt_comments}
 \title{Parse YouTube Comments
-This function processes a dataframe of YouTube comments, extracting and cleaning various elements such as emojis, smileys, URLs, timestamps, and user mentions. It supports comment dataframes created with the \code{\link[tuber]{get_all_comments}},\code{\link[tuber]{get_comments}} or \code{\link[vosonSML]{Collect}} functions.}
+This function processes a dataframe of YouTube comments, extracting and cleaning various elements such as emojis, Emoticons, URLs, timestamps, and user mentions. It supports comment dataframes created with the \code{\link[tuber]{get_all_comments}},\code{\link[tuber]{get_comments}} or \code{\link[vosonSML]{Collect}} functions.}
 \usage{
 parse_yt_comments(data, package = "auto", verbose = FALSE)
 }
@@ -15,11 +15,11 @@ parse_yt_comments(data, package = "auto", verbose = FALSE)
 \item{verbose}{A logical parameter. If TRUE, the function prints progress reports to the console.}
 }
 \value{
-A dataframe with the original comment data and additional columns for cleaned comments, emojis, emoji descriptions, smileys, URLs, timestamps, and user mentions. The dataframe also includes metadata as attributes, such as the origin package, tubecleanR version, and counts of comments, links, emojis, smileys, user mentions, and timestamps.
+A dataframe with the original comment data and additional columns for cleaned comments, emojis, emoji descriptions, emoticons, URLs, timestamps, and user mentions. The dataframe also includes metadata as attributes, such as the origin package, tubecleanR version, and counts of comments, links, emojis, Emoticons, user mentions, and timestamps.
 }
 \description{
 Parse YouTube Comments
-This function processes a dataframe of YouTube comments, extracting and cleaning various elements such as emojis, smileys, URLs, timestamps, and user mentions. It supports comment dataframes created with the \code{\link[tuber]{get_all_comments}},\code{\link[tuber]{get_comments}} or \code{\link[vosonSML]{Collect}} functions.
+This function processes a dataframe of YouTube comments, extracting and cleaning various elements such as emojis, Emoticons, URLs, timestamps, and user mentions. It supports comment dataframes created with the \code{\link[tuber]{get_all_comments}},\code{\link[tuber]{get_comments}} or \code{\link[vosonSML]{Collect}} functions.
 }
 \note{
 This function requires the 'tuber' or 'vosonSML' package for data collection. The 'tubecleanR' minipackage is only for processing.
