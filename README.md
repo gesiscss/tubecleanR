@@ -18,7 +18,7 @@ If you are interested in becoming a maintainer of this package, feel free to con
  
 ## 2) Demo data
 
-We have created some simulated *YouTube* comment data data in the `tuber` and `vosonSML`
+We have created some simulated *YouTube* comment data in the `tuber` and `vosonSML` formats
 
 ```R
 # Loading example comments bundled with the package
