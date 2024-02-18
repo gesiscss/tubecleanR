@@ -1,9 +1,9 @@
-#' Parse YouTube Comments
-#' This function processes a dataframe of YouTube comments, extracting and cleaning various elements such as emojis, Emoticons, URLs, timestamps, and user mentions. It supports comment dataframes created with the \code{\link[tuber]{get_all_comments}},\code{\link[tuber]{get_comments}} or \code{\link[vosonSML]{Collect}} functions.
+#' @title Parse YouTube Comments
+#' @description This function processes a dataframe of YouTube comments, extracting and cleaning various elements such as emojis, emoticons, URLs, timestamps, and user mentions. It supports comment dataframes created with the \code{\link[tuber]{get_all_comments}},\code{\link[tuber]{get_comments}} or \code{\link[vosonSML]{Collect}} functions.
 #' @param data A dataframe containing YouTube comments. The structure of this dataframe should conform to the output of the 'tuber' or 'vosonSML' package.
 #' @param package A character string specifying the package that was used to collect the comment data. The default value is "auto", which automatically detects the package based on the structure of the `data`. Other possible values are "tuber" and "vosonSML".
 #' @param verbose A logical parameter. If TRUE, the function prints progress reports to the console.
-#' @return A dataframe with the original comment data and additional columns for cleaned comments, emojis, emoji descriptions, emoticons, URLs, timestamps, and user mentions. The dataframe also includes metadata as attributes, such as the origin package, tubecleanR version, and counts of comments, links, emojis, Emoticons, user mentions, and timestamps.
+#' @return A dataframe with the original comment data and additional columns for cleaned comments, emojis, emoji descriptions, emoticons, URLs, timestamps, and user mentions. The dataframe also includes metadata as attributes, such as the origin package, tubecleanR version, and counts of comments, links, emojis, emoticons, user mentions, and timestamps.
 #' @importFrom stringi stri_split_boundaries stri_extract_all_regex stri_replace_all_regex
 #' @importFrom anytime anytime
 #' @importFrom qdapRegex rm_url rm_non_words
@@ -17,7 +17,7 @@
 #' parsed_comments <- parse_yt_comments(tuber_comments)
 #' @export
 #' @keywords youtube, comments, parsing
-#' @note This function requires the 'tuber' or 'vosonSML' package for data collection. The 'tubecleanR' minipackage is only for processing.
+#' @note This function requires the 'tuber' or 'vosonSML' package for data collection. The 'tubecleanR' minipackage is only meant for processing YouTube comment data.
 
 parse_yt_comments <- function(data,
                               package = "auto",
