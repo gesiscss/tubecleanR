@@ -34,7 +34,7 @@ voson_parsed <- parse_yt_comments(vosonComments)
 
 # Checking parsed versions of example comments
 View(tuber_parsed)
-View(voson_parsed)
+View(Voson_parsed)
 ```
  
 ## 3) Using your own data
