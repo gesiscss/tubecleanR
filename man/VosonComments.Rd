@@ -31,7 +31,7 @@ VosonComments
 }
 \description{
 An example dataset to showcase the structure of YouTube comments extracted
-using the \code{\link[Collect()()]{Collect}}
+using the \code{\link[vosonSML:Collect]{Collect}}
  function from the \pkg{vosonSML} package.
 }
 \keyword{datasets}

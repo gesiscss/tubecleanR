@@ -1,7 +1,7 @@
 #' vosonComments
 #'
 #' An example dataset to showcase the structure of YouTube comments extracted
-#' using the \code{\link[Collect()()]{Collect}}
+#' using the \code{\link[vosonSML:Collect]{Collect}}
 #'  function from the \pkg{vosonSML} package.
 #'
 #' @format A data frame with 24 rows and 12 columns:

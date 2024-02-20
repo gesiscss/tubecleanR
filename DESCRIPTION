@@ -6,7 +6,7 @@ Author: Julian Kohne; Johannes Breuer
 Maintainer: Julian Kohne <julian.kohe@gesis.org>
 Description: This mini-package is mainly meant as extension for the tuber and the vosonSML packages for preprocessing comment collected via the YouTube API. The package processes YouTube comment data by removing and/or replacing links, emoticons, emoji, and user names. The output of the main function of this package is a well-defined dataframe suitable for further processing and (text) analysis.
 Imports: anytime, qdapRegex, stringi, utils
-License: CC BY-NC 4.0
+License: CC BY-NC 4.0 + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.3

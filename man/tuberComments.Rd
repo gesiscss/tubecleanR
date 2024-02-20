@@ -36,7 +36,7 @@ tuberComments
 }
 \description{
 An example dataset to showcase the structure of YouTube comments extracted
-using the \code{\link[get_comments()]{get_comments}} or \code{\link[get_all_comments()]{get_comments_all}}
+using the \code{\link[tuber:get_comments]{get_comments}} or \code{\link[tuber:get_all_comments]{get_comments_all}}
  function from the \pkg{tuber} package.
 }
 \keyword{datasets}
