@@ -21,13 +21,20 @@ If you are interested in becoming a maintainer of this package, feel free to con
 We have created some simulated *YouTube* comment data in the `tuber` and `vosonSML` formats
 
 ```R
-# Loading example comments bundled with the package
-tuber_demo <- readRDS(system.file("tuberComments.rds", package = "tubecleanR"))
-voson_demo <- readRDS(system.file("vosonComments.rds", package = "tubecleanR"))
+# attaching package
+library(tubecleanR)
+
+# Checking example comments bundled with the package
+View(tuberComments)
+View(vosonComments)
 
 # Parsing comments
-tuber_parsed <- parse_yt_comments(tuber_demo)
-voson_parsed <- parse_yt_comments(voson_demo)
+tuber_parsed <- parse_yt_comments(tuberComments)
+voson_parsed <- parse_yt_comments(vosonComments)
+
+# Checking parsed versions of example comments
+View(tuber_parsed)
+View(voson_parsed)
 ```
  
 ## 3) Using your own data
