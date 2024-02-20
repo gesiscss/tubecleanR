@@ -6,8 +6,8 @@ library(tubecleanR)
 test_that("Testing parse_yt_comments() for tuber",{
 
   # loading test data and checking data
-  tuber_comments <- readRDS(system.file("tuberComments.rds", package = "tubecleanR"))
-  tuber_gold <- readRDS(system.file("parsetuber.rds", package = "tubecleanR"))
+  tuber_comments <- tuberComments
+  tuber_gold <- parsetuber
 
   # parsing
   parsed_comments <- parse_yt_comments(tuber_comments)
@@ -25,8 +25,8 @@ test_that("Testing parse_yt_comments() for tuber",{
 test_that("Testing parse_yt_comments() for vosonSML",{
 
   # loading test data and checking data
-  voson_comments <- readRDS(system.file("VosonComments.rds", package = "tubecleanR"))
-  voson_gold <- readRDS(system.file("parsevoson.rds", package = "tubecleanR"))
+  voson_comments <- VosonComments
+  voson_gold <- parsevoson
 
   # parsing
   parsed_comments <- parse_yt_comments(voson_comments)

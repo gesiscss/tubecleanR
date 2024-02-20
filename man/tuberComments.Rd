@@ -16,7 +16,7 @@ A data frame with 24 rows and 16 columns:
   \item{authorChannelUrl}{URL to the channel of the comment author}
   \item{authorChannelId.value}{he ID of the comment author's YouTube channel, if available}
   \item{canRate}{This setting indicates whether the current viewer can rate the comment}
-  \item{viewerRating}{The rating the viewer has given to this comment} #
+  \item{viewerRating}{The rating the viewer has given to this comment}
   \item{likeCount}{The total number of likes (positive ratings) the comment has received}
   \item{publishedAt}{Date and time the comment was posted}
   \item{updatedAt}{Date and time the comment was last updated}
