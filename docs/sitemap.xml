@@ -13,9 +13,21 @@
     <loc>/index.html</loc>
   </url>
   <url>
+    <loc>/reference/VosonComments.html</loc>
+  </url>
+  <url>
     <loc>/reference/index.html</loc>
   </url>
   <url>
     <loc>/reference/parse_yt_comments.html</loc>
+  </url>
+  <url>
+    <loc>/reference/parsetuber.html</loc>
+  </url>
+  <url>
+    <loc>/reference/parsevoson.html</loc>
+  </url>
+  <url>
+    <loc>/reference/tuberComments.html</loc>
   </url>
 </urlset>
