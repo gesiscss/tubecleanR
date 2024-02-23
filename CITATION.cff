@@ -1,0 +1,25 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: tubecleanR
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Julian
+    family-names: Kohne
+    affiliation: GESIS - Leibniz Institute for the Social Sciences
+    orcid: 'https://orcid.org/0000-0002-6710-7545'
+  - given-names: Johannes
+    family-names: Breuer
+    email: johannes.breuer@gesis.org
+    affiliation: GESIS - Leibniz Institute for the Social Sciences
+    orcid: 'https://orcid.org/0000-0001-5906-7873'
+repository-code: 'https://github.com/gesiscss/tubecleanR'
+url: 'https://gesiscss.github.io/tubecleanR/'
+keywords:
+  - R
+  - YouTube
+license: CC-BY-4.0
