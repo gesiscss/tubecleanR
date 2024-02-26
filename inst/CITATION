@@ -1,0 +1,10 @@
+citHeader("To cite package ‘tubecleanR’ in publications use:")
+
+citEntry(entry="Manual",
+         title="tubecleanR: Parsing and Preprocessing YouTube Comment Data",
+         author="Julian Kohne and Johannes Breuer",
+         year="2024",
+         note="R package version 0.1.0",
+         url="https://gesiscss.github.io/tubecleanR/",
+         textVersion="Kohne, J., & Breuer, J. (2024). tubecleanR: Parsing and Preprocessing YouTube Comment Data. R package version 0.1.0. <https://gesiscss.github.io/tubecleanR/>.")
+

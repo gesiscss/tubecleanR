@@ -42,3 +42,27 @@ View(Voson_parsed)
 The `parse_yt_comments()` function is meant to be used for *YouTube* comment data collected with the `get_all_comments()` function from `tuber` or the `Collect()` function from `vosonSML`. Both of those require access credentials for the *YouTube API*. Check the documentation of those two packages for further details.
 
 If you want to learn more about getting access to the *YouTube* API, collecting comment (and other) data from the API using `R`, and processing and exploring the resulting data, you can also check out the materials from our [workshop](https://github.com/jobreu/youtube-workshop-gesis-2023).
+
+## 4) Citation
+If you are using this package in your research, please cite it as follows:
+
+```R
+> citation("tubecleanR")
+```
+
+```R
+To cite package ‘tubecleanR’ in publications use:
+
+  Kohne, J., & Breuer, J. (2024). tubecleanR: Parsing and Preprocessing YouTube Comment
+  Data. R package version 0.1.0. <https://gesiscss.github.io/tubecleanR/>.
+
+A BibTeX entry for LaTeX users is
+
+  @Manual{,
+    title = {tubecleanR: Parsing and Preprocessing YouTube Comment Data},
+    author = {Julian Kohne and Johannes Breuer},
+    year = {2024},
+    note = {R package version 0.1.0},
+    url = {https://gesiscss.github.io/tubecleanR/},
+  }
+```
