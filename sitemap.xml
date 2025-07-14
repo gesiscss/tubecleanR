@@ -1,33 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://gesiscss.github.io/tubecleanR/404.html</loc>
-  </url>
-  <url>
-    <loc>https://gesiscss.github.io/tubecleanR/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>https://gesiscss.github.io/tubecleanR/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://gesiscss.github.io/tubecleanR/index.html</loc>
-  </url>
-  <url>
-    <loc>https://gesiscss.github.io/tubecleanR/reference/VosonComments.html</loc>
-  </url>
-  <url>
-    <loc>https://gesiscss.github.io/tubecleanR/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://gesiscss.github.io/tubecleanR/reference/parse_yt_comments.html</loc>
-  </url>
-  <url>
-    <loc>https://gesiscss.github.io/tubecleanR/reference/parsetuber.html</loc>
-  </url>
-  <url>
-    <loc>https://gesiscss.github.io/tubecleanR/reference/parsevoson.html</loc>
-  </url>
-  <url>
-    <loc>https://gesiscss.github.io/tubecleanR/reference/tuberComments.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://gesiscss.github.io/tubecleanR/404.html</loc></url>
+<url><loc>https://gesiscss.github.io/tubecleanR/LICENSE-text.html</loc></url>
+<url><loc>https://gesiscss.github.io/tubecleanR/authors.html</loc></url>
+<url><loc>https://gesiscss.github.io/tubecleanR/index.html</loc></url>
+<url><loc>https://gesiscss.github.io/tubecleanR/reference/VosonComments.html</loc></url>
+<url><loc>https://gesiscss.github.io/tubecleanR/reference/index.html</loc></url>
+<url><loc>https://gesiscss.github.io/tubecleanR/reference/parse_yt_comments.html</loc></url>
+<url><loc>https://gesiscss.github.io/tubecleanR/reference/parsetuber.html</loc></url>
+<url><loc>https://gesiscss.github.io/tubecleanR/reference/parsevoson.html</loc></url>
+<url><loc>https://gesiscss.github.io/tubecleanR/reference/tuberComments.html</loc></url>
 </urlset>
+
