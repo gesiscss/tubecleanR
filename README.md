@@ -2,9 +2,9 @@
 <img src="man/figures/tubecleanR_stickr.png" align="right" alt="tubecleanR Sticker" width="120">
 
 This is a mini `R` package for cleaning and preprocess *YouTube* comment data collected with the `R` packages [tuber](https://github.com/gojiplus/tuber) or [vosonSML](https://github.com/vosonlab/vosonSML).
-The package is a collection of several functions that were developed during several workshops on collecting and analyzing *YouTube* data at [GESIS - Leibniz Institute for the Social Sciences](https://www.gesis.org/home). The main function of the package is `parse_yt_comments()` which takes a dataframe containing *YouTube* comments collected with `tuber` or `vosonSML` as input and outputs a processed dataframe in which URLs/links, video timestamps user mentions, emoticons, and emoji have been extracted from the comments into separate colums. In addition to this, the function creates a columns containing textual descriptions of the emoji, and another one containing a cleaned version of the comment in which the elements listed before as well as numbers and punctuation have been removed.
+The package is a collection of functions that were developed during several workshops on collecting and analyzing *YouTube* data at [GESIS - Leibniz Institute for the Social Sciences](https://www.gesis.org/home). The main function of the package is `parse_yt_comments()` which takes a dataframe containing *YouTube* comments collected with `tuber` or `vosonSML` as input and outputs a processed dataframe in which URLs/links, video timestamps user mentions, emoticons, and emoji have been extracted from the comments into separate columns. In addition to this, the function creates a column containing textual descriptions of the emoji, and another one containing a cleaned version of the comment in which the elements listed before as well as numbers and punctuation have been removed.
 
-**Please note**: The functions in this package are heavily dependent on the structure of the data exports from `tuber` and `vosonSML`, and, by extension, the structure of the *YouTube* API. 
+**Please note**: The functions in this package are heavily dependent on the structure of the data exports from `tuber` and `vosonSML`, and, by extension, the structure of the *YouTube* API. You can find an introduction to the *YouTube Data API* in the [*GESIS Guide on Digital Behavioral Data* on "How to Collect Data with the YouTube Data API"](https://www.gesis.org/fileadmin/admin/Dateikatalog/pdf/guides/13_Kohne_et_al_How_to_YouTube.pdf). 
 
 If you are interested in becoming a maintainer of this package, feel free to contact us.
  
@@ -18,10 +18,10 @@ If you are interested in becoming a maintainer of this package, feel free to con
  
 ## 2) Demo data
 
-We have created some simulated *YouTube* comment data in the `tuber` and `vosonSML` formats
+We have created some simulated *YouTube* comment data in the `tuber` and `vosonSML` formats that is included in this package.
 
 ```R
-# attaching package
+# Attaching package
 library(tubecleanR)
 
 # Checking example comments bundled with the package
@@ -47,7 +47,7 @@ If you want to learn more about getting access to the *YouTube* API, collecting 
 If you are using this package in your research, please cite it as follows:
 
 ```R
-> citation("tubecleanR")
+citation("tubecleanR")
 ```
 
 ```R
