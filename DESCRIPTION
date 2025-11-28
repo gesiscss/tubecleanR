@@ -3,18 +3,20 @@ Type: Package
 Title: Parsing and Preprocessing YouTube Comment Data
 Version: 0.1.0
 Date: 2024-02-26
-Authors@R: c(person("Julian", "Kohne", role = c("aut", "cre"), email = "julian.kohne@gesis.org"),
-             person("Johannes", "Breuer", role = "aut", email = "johannes.breuer@gesis.org"))
+Authors@R: c(person("Julian", "Kohne", role = c("aut", "cre"), email = "julian.kohne@gesis.org",comment = c(ORCID = "0000-0002-6710-7545")),
+             person("Johannes", "Breuer", role = "aut", email = "johannes.breuer@cais-research.de",
+             comment = c(ORCID = "0000-0001-5906-7873")))
 Maintainer: Julian Kohne <julian.kohne@gesis.org>
-Description: This mini-package is mainly meant as extension for the tuber and the vosonSML packages for preprocessing comment collected via the YouTube API. The package processes YouTube comment data by removing and/or replacing links, emoticons, emoji, and user names. The output of the main function of this package is a well-defined dataframe suitable for further processing and (text) analysis.
+Description: This mini-package is meant as extension for the tuber and the vosonSML packages for preprocessing user comments collected via the YouTube API. The preprocessing in this package focuses on links, emoticons, emoji, video timestamps, and user names. The output of the main function of this package creates a well-defined dataframe suitable for further processing and (text) analysis.
 Imports: anytime, qdapRegex, stringi, utils
 License: CC BY-NC 4.0 + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.3
+URL: https://gesiscss.github.io/tubecleanR/
+BugReports: https://gesiscss.github.io/tubecleanR/issues
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Depends: 
     R (>= 2.10)
-URL: https://gesiscss.github.io/tubecleanR/
